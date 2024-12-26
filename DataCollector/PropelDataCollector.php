@@ -58,7 +58,7 @@ class PropelDataCollector extends DataCollector
      */
     public function getQueries(): array
     {
-        return $this->data['queries'];
+        return iterator_to_array($this->data['queries'], false);
     }
 
     /**
